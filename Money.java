@@ -18,4 +18,13 @@ public class Money{
     public void setUnit(String newUnit){
         this.unit = newUnit;
     }
+    public boolean greaterThan(int amount){
+        if (this.balance > amount){
+            return true;
+        }
+        return false;
+    }
+    public void add (int amount){
+        this.balance += amount;
+    }
 }
